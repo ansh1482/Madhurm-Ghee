@@ -1,0 +1,103 @@
+li {
+    padding: 10px 0px;
+}
+
+li:hover {
+    color: rgba(7, 160, 248, 0.993);
+    cursor: pointer;
+}
+
+button {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 0px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    float: right;
+}
+
+.navbar {
+    width: 100%;
+    background-image: linear-gradient(to right, white, rgb(121, 206, 245));
+    color: white;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav-links {
+    height: 0;
+    overflow: hidden;
+    list-style-type: none;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.logo {
+    height: 100px;
+    width: 150px;
+    padding-left: 20px;
+    position: relative;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@keyframes translate {
+    from {height: 0px; font-size: 0px;}
+    to {height: 150px; font-size: auto;}
+}
+
+.show-nav {
+    animation-name: translate;
+    animation-duration: 1s;
+    height: 150px;
+    width: 100%;
+    background-image: url(../../assets/ghee-handi.png);
+    background-repeat: no-repeat;
+    background-position: 80% 80%;
+    color: rgb(121, 206, 245);
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.slideInLeftUl {
+    margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    button {
+        display: none;
+    }
+
+    .nav-links {
+        font-size: 20px;
+        position: relative;
+        bottom: 50px;
+        height: auto;
+        display: flex;
+        float: right;
+        margin-right: 100px;
+        background-image: none;
+    }
+
+    li {
+        margin-left: 50px;
+    }
+
+    .navbar {
+        height: 120px;
+    }
+
+    li:hover {
+        border-radius: 10%;
+        border-bottom-style: solid;
+        border-bottom-width: 5px;
+        border-bottom-color: rgba(7, 160, 248, 0.993);
+    }
+}

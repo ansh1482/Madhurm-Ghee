@@ -1,0 +1,35 @@
+label {
+    position: relative;
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0 2px 0 0 #75c9fa;
+    outline: none;
+    line-height: 1.5em;
+    background: none;
+}
+
+span{
+    position: absolute;
+    opacity: 0.6;
+    top: 0;
+    left: 2px;
+    cursor: text;
+    transition: all 0.5s ease-in-out;
+  }
+
+  input.has-value + span,
+  input:focus + span{
+    opacity: 1;
+    transform: translate(-2px, -1.5em);
+    font-size: 0.8em;
+    cursor: default;
+  }
+
+  input:focus {
+    box-shadow: 0 2px 0 0 rgba(7, 160, 248, 0.993);
+  }

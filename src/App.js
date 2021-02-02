@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ProductCard from './components/product-card/product-card';
+import img from './assets/1.gif';
+import FormInput from './components/formInput/formInput';
+import WelcomeScroll from './components/welcome-scroll';
+import NavigationBar from './components/navigation-bar/navigation-bar';
+import { Route, Switch } from 'react-router-dom';
+import HomePage from './pages/homepage/homepage';
+import ContactPage from './pages/contact/contact';
+import AboutPage from './pages/about/about';
+import ProductPage from './pages/product/product';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super();
+  }
+
+  render() {
+    return (
+      <div>
+        <NavigationBar />
+        <Switch>
+          <Route exact path='/' component={HomePage} />
+          <Route path='/about' component={AboutPage} />
+          <Route path='/product' component={ProductPage} />
+          <Route path='/contact' component={ContactPage} />
+        </Switch>
+        {/* <WelcomeScroll />
+        <ProductCard productName='Madhurm Desi Ghee' productImage={img} />
+        <ProductCard productName='Bal Gopal Desi Ghee' productImage={img} />
+        <ProductCard productName='test 2' productImage={img} />
+        <ProductCard productName='test 2' productImage={img} />
+        <ProductCard productName='test 2' productImage={img} />
+        <ProductCard productName='test 2' productImage={img} />
+        <FormInput type='text' name='test' label='Name' />
+        <ProductCard productName='test 2' productImage={img} /> */}
+      </div>
+    );
+  }
 }
 
 export default App;
