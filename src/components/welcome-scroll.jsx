@@ -43,7 +43,7 @@ class WelcomeScroll extends React.Component {
     
       render() {
         return (
-          <div onScroll={this.onScroll} style={{height: '90vh', overflow: 'scroll', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw'}}>
+          <div onScroll={this.onScroll} style={{height: '80vh', overflow: 'scroll', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw'}}>
             <img src = {img[this.state.index]} style={{width: '100%', height: '100vh'}}/>
           </div>
         );
