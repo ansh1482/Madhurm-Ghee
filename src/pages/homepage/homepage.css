@@ -86,4 +86,8 @@
     .ghee-quality {
         display: inline;
     }
+
+    .ghee-quality img {
+        margin-left: 0;
+    }
 }

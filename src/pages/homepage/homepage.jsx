@@ -28,7 +28,7 @@ const HomePage = () =>
                 </ScrollAnimation>
             </div>
         </div>
-        <div style={{width: '100%'}}>
+        <div>
             <FaQuoteLeft style={{color: 'white', fontSize: '3rem', paddingLeft: '20%'}} />
             <h1 className='text-app' style={{margin: 'auto', textAlign: 'center', color: 'rgb(153, 100, 3)'}}>Taste bhi, Health bhi</h1>
             <h1 className='text-app' style={{margin: 'auto', textAlign: 'center', color: 'rgba(7, 160, 248, 0.993)'}}>Only with Madhurm Ghee</h1>
@@ -38,7 +38,7 @@ const HomePage = () =>
             <ScrollAnimation animateIn='fadeIn' duration={2}>
                 <h1 className='text-app' style={{textAlign: 'center', fontSize: '100px'}}>Why Madhurm Ghee?</h1>
                 <div className='ghee-quality'>
-                    <img src={boy} />
+                    <img src={boy} style={{width: '100%'}} />
                     <div className='points'>
                         <ScrollAnimation animateIn='bounceInRight' duration={2}>
                             <div>
