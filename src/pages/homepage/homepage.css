@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;900&display=swap');
+
+.text-app {
+    color: rgb(102, 80, 38);
+    font-family: 'Dancing Script';
+    font-size: 5rem;
+    margin: 0;
+}
+
+.brand {
+    background: url(../../assets/cow.png) no-repeat 50% 80%;
+    background-size: 100% 70%;
+}
+
+.brand-ghee {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+.brand-left {
+    width: 100%;
+    float: left;
+}
+
+.brand-right {
+    width: 100%;
+    float: right;
+}
+
+.swasth {
+    margin-top: 30px;
+}
+
+.quality {
+    background-image: url(../../assets/gheeFlowing.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 70px;
+    width: 100%;
+    padding-bottom: 10px; 
+}
+
+.ghee-quality {
+    display: flex;
+    align-items: center;
+}
+
+.ghee-quality img {
+    flex: 50%;
+    margin-left: 20px;
+}
+
+.points {
+    flex: 50%;
+    margin-left: 10px;
+}
+
+.points h1 {
+    margin: 0;
+    margin-top: 50px;
+    font-family: 'Inconsolata';
+    color: rgba(7, 93, 143, 0.993);
+}
+
+.points h2 {
+    margin-top: 0;
+    margin-left: 20px;
+    font-family: 'Inconsolata';
+    font-weight: 300;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .swasth img {
+        width: 100%;
+    }
+
+    .text-app {
+        font-size: 2.5rem;
+    }
+
+    .ghee-quality {
+        display: inline;
+    }
+}

@@ -1,4 +1,4 @@
-import { bounceInRight, slideInLeft, fadeIn, slideInRight, slideInUp } from 'react-animations';
+import { bounceInRight, slideInLeft, fadeIn, slideInRight, slideInUp, tada, zoomIn } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 
 const bounceInAnimation = keyframes`${bounceInRight}`;
@@ -27,4 +27,14 @@ export const FadeInDiv = styled.div`
 const slideInUpAnimation = keyframes`${slideInUp}`;
 export const SlideInUpDiv = styled.div`
     animation: 0.5s ${slideInUpAnimation};
+`;
+
+const shakeAnimation = keyframes`${tada}`;
+export const ShakeDiv = styled.div`
+    animation: 7s ${shakeAnimation} infinite;
+`;
+
+const zoomInAnimation = keyframes`${zoomIn}`;
+export const ZoomInDiv = styled.div`
+    animation: 7s ${zoomInAnimation} infinite;
 `;

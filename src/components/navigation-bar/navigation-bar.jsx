@@ -46,6 +46,7 @@ class NavigationBar extends React.Component {
                         </ul>
                     </SlideInLeftUl>
                 </div>
+                <div style={{width: '100%', height: '100px'}}></div>
             </BounceInRightDiv>
         );
     }

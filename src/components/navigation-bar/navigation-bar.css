@@ -53,17 +53,16 @@ button {
 .show-nav {
     animation-name: translate;
     animation-duration: 1s;
-    height: 150px;
+    height: 160px;
     width: 100%;
     background-image: url(../../assets/ghee-handi.png);
     background-repeat: no-repeat;
     background-position: 80% 80%;
-    color: rgb(121, 206, 245);
 }
 
 .link {
     text-decoration: none;
-    color: white;
+    color: rgba(7, 160, 248, 0.993);
 }
 
 .slideInLeftUl {
@@ -75,6 +74,14 @@ button {
         display: none;
     }
 
+    .link {
+        color: white;
+    }
+
+    .link:hover {
+        color: rgba(7, 160, 248, 0.993);
+    }
+
     .nav-links {
         font-size: 20px;
         position: relative;
@@ -82,12 +89,13 @@ button {
         height: auto;
         display: flex;
         float: right;
-        margin-right: 100px;
+        margin-right: 30px;
         background-image: none;
     }
 
     li {
         margin-left: 50px;
+        color: white;
     }
 
     .navbar {

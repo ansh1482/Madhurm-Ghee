@@ -28,7 +28,7 @@ class WelcomeScroll extends React.Component {
         var index = this.state.index;
         var speed = this.state.speed;
         speed = speed + 1;
-        if(speed === 5) {
+        if(speed === 2) {
           speed = 0;
           index = index + 1;
         }
@@ -43,9 +43,8 @@ class WelcomeScroll extends React.Component {
     
       render() {
         return (
-          <div onScroll={this.onScroll} style={{height: '95vh', overflow: 'scroll', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <h1 style={{zIndex: '99', fontSize: '90px', position: 'absolute', width: '100%', textAlign: 'center'}}>Towards Indian Traditional Taste</h1>
-            <img src = {img[this.state.index]} style={{width: '100%', height: '110vh'}}/>
+          <div onScroll={this.onScroll} style={{height: '90vh', overflow: 'scroll', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <img src = {img[this.state.index]} style={{width: '100%', height: '100vh'}}/>
           </div>
         );
       }

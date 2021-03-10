@@ -1,0 +1,31 @@
+.footbar {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.icon {
+    font-size: 30px;
+    padding-right: 20px;
+    color: rgb(68, 70, 70);
+}
+
+.icon:hover {
+    font-size: 50px;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.instagram:hover {
+    color: #c13584;
+}
+
+.youtube:hover {
+    color: #c4032b;
+}
