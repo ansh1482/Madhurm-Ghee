@@ -28,7 +28,7 @@ class WelcomeScroll extends React.Component {
         var index = this.state.index;
         var speed = this.state.speed;
         speed = speed + 1;
-        if(speed === 2) {
+        if(speed === 5) {
           speed = 0;
           index = index + 1;
         }
